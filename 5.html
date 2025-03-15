@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Coffee Shop - Stack Left Layout</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF3E0;
+            color: #333;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #6F4E37;
+            color: white;
+            width: 250px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            height: 100vh;
+        }
+
+        /* Logo */
+        .logo {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            transition: background 0.3s, border-radius 0.3s;
+            display: block;
+        }
+
+        .nav a:hover {
+            background: #D2691E;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 270px;
+            padding: 40px;
+            flex-grow: 1;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            color: #6F4E37;
+            border-bottom: 3px solid #D2691E;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="https://i.ibb.co/HDDn1r47/Screenshot-2025-03-15-205421-Photoroom.png" alt="Logo" class="logo">
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#ratings">Ratings</a>
+            <a href="#rateus">Rate Us</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to Classic Coffee Shop, where every cup tells a story! Our beans are sourced from the finest farms to bring you an unforgettable coffee experience.</p>
+        </div>
+
+        <div id="menu" class="section">
+            <h2>Our Menu</h2>
+            <p>Rich flavors, perfect blends, and aromatic brews to make your day.</p>
+        </div>
+
+        <div id="ratings" class="section">
+            <h2>Customer Ratings</h2>
+            <div class="rating-container">
+                <div class="rating">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"The best coffee in town!" - Sarah J.</p>
+                </div>
+                <div class="rating">
+                    <p>⭐⭐⭐⭐☆</p>
+                    <p>"Great ambiance and delicious coffee!" - Mark T.</p>
+                </div>
+                <div class="rating">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Absolutely love the service and the taste!" - Emily R.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="rateus" class="section">
+            <h2>Rate Us</h2>
+            <form class="rating-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="stars">Your Rating:</label>
+                <select id="stars">
+                    <option>⭐⭐⭐⭐⭐ - Excellent</option>
+                    <option>⭐⭐⭐⭐☆ - Good</option>
+                    <option>⭐⭐⭐☆☆ - Average</option>
+                    <option>⭐⭐☆☆☆ - Needs Improvement</option>
+                    <option>⭐☆☆☆☆ - Poor</option>
+                </select>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

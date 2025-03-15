@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Grid Layout</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFB22C;
+            text-align: center;
+        }
+
+        header {
+            background-color: #000000;
+            color: #FFB22C;
+            padding: 25px 0;
+            font-size: 26px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background: #000000;
+            color: #FFB22C;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .grid-item h3 {
+            margin: 0 0 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .grid-item p {
+            margin: 0 0 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .grid-item a {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #FFB22C;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .grid-item a:hover {
+            background-color: #FFB22C;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>Modern Grid Layout</header>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Section 1</h3>
+            <p>Discover more about Section 1. Click below for details.</p>
+            <a href="1.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 2</h3>
+            <p>Discover more about Section 2. Click below for details.</p>
+            <a href="2.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 3</h3>
+            <p>Discover more about Section 3. Click below for details.</p>
+            <a href="3.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 4</h3>
+            <p>Discover more about Section 4. Click below for details.</p>
+            <a href="4.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 5</h3>
+            <p>Discover more about Section 5. Click below for details.</p>
+            <a href="5.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 6</h3>
+            <p>Discover more about Section 6. Click below for details.</p>
+            <a href="6.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 7</h3>
+            <p>Discover more about Section 7. Click below for details.</p>
+            <a href="7.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 8</h3>
+            <p>Discover more about Section 8. Click below for details.</p>
+            <a href="8.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 9</h3>
+            <p>Discover more about Section 9. Click below for details.</p>
+            <a href="9.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 10</h3>
+            <p>Discover more about Section 10. Click below for details.</p>
+            <a href="10.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 11</h3>
+            <p>Discover more about Section 11. Click below for details.</p>
+            <a href="11.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 12</h3>
+            <p>Discover more about Section 12. Click below for details.</p>
+            <a href="12.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 13</h3>
+            <p>Discover more about Section 13. Click below for details.</p>
+            <a href="13.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 14</h3>
+            <p>Discover more about Section 14. Click below for details.</p>
+            <a href="14.html">Explore</a>
+        </div>
+        <div class="grid-item">
+            <h3>Section 15</h3>
+            <p>Discover more about Section 15. Click below for details.</p>
+            <a href="15.html">Explore</a>
+        </div>
+    </div>
+</body>
+</html>

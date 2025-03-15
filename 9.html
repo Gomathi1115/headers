@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Coffee Shop - Logo Centered</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF3E0;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Centered Logo Header */
+        .header {
+            background-color: #6F4E37;
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 45%;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            color: #6F4E37;
+            border-bottom: 3px solid #D2691E;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://i.ibb.co/HDDn1r47/Screenshot-2025-03-15-205421-Photoroom.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="main-content">
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to Classic Coffee Shop, where every cup tells a story! Our beans are sourced from the finest farms to bring you an unforgettable coffee experience.</p>
+        </div>
+
+        <div id="menu" class="section">
+            <h2>Our Menu</h2>
+            <p>Rich flavors, perfect blends, and aromatic brews to make your day.</p>
+        </div>
+    </div>
+    <div id="ratings" class="section">
+        <h2>Customer Ratings</h2>
+        <div class="rating-container">
+            <div class="rating">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"The best coffee in town!" - Sarah J.</p>
+            </div>
+            <div class="rating">
+                <p>⭐⭐⭐⭐☆</p>
+                <p>"Great ambiance and delicious coffee!" - Mark T.</p>
+            </div>
+            <div class="rating">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p>"Absolutely love the service and the taste!" - Emily R.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="rateus" class="section">
+        <h2>Rate Us</h2>
+        <form class="rating-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="stars">Your Rating:</label>
+            <select id="stars">
+                <option>⭐⭐⭐⭐⭐ - Excellent</option>
+                <option>⭐⭐⭐⭐☆ - Good</option>
+                <option>⭐⭐⭐☆☆ - Average</option>
+                <option>⭐⭐☆☆☆ - Needs Improvement</option>
+                <option>⭐☆☆☆☆ - Poor</option>
+            </select>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+</body>
+</html>
